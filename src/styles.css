@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+}
+
+.heading {
+  background-color: antiquewhite;
+  padding: 20px 100px 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo {
+  font-size: 40px;
+  color: rgb(212, 133, 133);
+  padding: 10px 10px 10px 10px;
+}
+.add-field {
+  display: flex;
+  justify-content: center;
+}
+.field {
+  display: flex;
+  align-items: center;
+}
+.add {
+  color: rgb(126, 94, 94);
+}
+/* .container {
+  background-color: red;
+} */
+.add-field-item {
+  display: inline-block;
+  background-color: antiquewhite;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+.btn {
+  background: linear-gradient(to right, rgb(236, 72, 140), rgb(240, 52, 82));
+  border-radius: 3px;
+  height: 45px;
+  padding: 2px 5px 2px 5px;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+input[type="text"]:focus {
+  outline: 1px solid rgb(245, 105, 49);
+}
+.input {
+  border-color: rgb(250, 243, 243);
+  padding: 10px;
+  min-width: 600px;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.so {
+  width: 50%;
+}
+button {
+  padding: 1px;
+  margin: 0 2px 0 0;
+  background: transparent;
+  border: 0;
+  box-shadow: 1px solid wheat;
+}
+.todo-item {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  background-color: rgb(211, 211, 211);
+  padding: 15px 10px 5px 10px;
+}
+.todo-item .check-box {
+  margin-right: 20px;
+}
+i.material-icons {
+  opacity: 0;
+}
+.todo-item:hover i.material-icons {
+  opacity: 1;
+}
+.todo-item.completed {
+  color: #aaa;
+}
+.todo-text {
+  font-size: 28px;
+}
+.todo-item.completed .check-box i.material-icons {
+  color: rgb(11, 223, 170);
+  opacity: 1;
+}
+.todo-item .todo-control {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  display: flex;
+  padding: 5px 5px;
+}
+.todo-control .todo-button i.material-icons:active {
+  background: rgb(155, 27, 27);
+}
+.is-alert {
+  color: red;
+  font-size: 12px;
+}
