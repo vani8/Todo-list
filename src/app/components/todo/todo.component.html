@@ -48,7 +48,7 @@
             <div class="todo-text">{{ todo.text }}</div>
 
             <div class="todo-control">
-              <button class="todo-button is-danger">
+              <button class="todo-button is-danger" (click)="editTodo(i)">
                 <i class="material-icons">edit</i>
               </button>
               <button class="todo-button is-danger" (click)="deleteTodo(i)">
